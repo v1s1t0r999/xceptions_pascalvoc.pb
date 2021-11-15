@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+echo "-----> Installing xceptions_pascalvoc.pb"
+# change to the the BUILD_DIR ($1)
+cd $1
+# download the binary (-O) silently (-s)
+curl https://github.com/ayoolaolafenwa/PixelLib/releases/download/1.1/xception_pascalvoc.pb -s -O -ssl3
+# make a directory to untar (like unzip) the binary
+mkdir -p vendor/xceptions_pascalvoc
+# untar the binary to the directory we want
+tar -C vendor/xceptions_pascalvoc -xvf xceptions_pascalvoc.pb

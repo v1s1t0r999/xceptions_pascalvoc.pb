@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "xceptions_pascalvoc.pb"
+exit 0
